@@ -1,7 +1,11 @@
-@import url(../vendor/normalize.css);
-/* fonts */
-@import url(../vendor/fonts.css);
-/* page */
-@import url(../blocks/page/page.css);
-
-
+@import "../vendor/normalize.css";
+@import "../vendor/fonts.css";
+.page {
+  min-width: 320px;
+  margin: 0 auto;
+  font-family: "Inter", Arial, sans-serif;
+  background-color: #F4F4F4;
+  color: #151515;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}/*# sourceMappingURL=index.css.map */
