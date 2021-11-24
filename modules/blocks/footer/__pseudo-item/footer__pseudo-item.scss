@@ -1,0 +1,20 @@
+.footer__pseudo-item {
+display: inline-block;
+vertical-align: middle;
+width: 44px;
+height: 24px;
+background: #FFFFFF;
+border-radius: 9999px;
+background-image: url(../images/Rectangle.png);
+background-repeat: no-repeat;
+background-size: auto;
+background-position: left center;
+transition: background-position 0.3s linear, background-color 0.3s linear;
+cursor: pointer;
+}
+
+.footer__checkbox:checked + .footer__pseudo-item {
+  background-position: right center;
+  background-color: #545454;
+}
+

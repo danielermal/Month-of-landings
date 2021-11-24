@@ -1,0 +1,12 @@
+.main-screen {
+  margin: $center;
+  padding-left: 120px;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  background-image: url(../images/main-screen-forest.png);
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-size: 610px 836px;
+  max-width: 1440px;
+}
