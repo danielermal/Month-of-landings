@@ -1,0 +1,16 @@
+.header {
+  padding: 28px 120px;
+  margin: $center;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
+  position:-webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #F4F4F4;
+  z-index: 3;
+  max-width: 1440px;
+}

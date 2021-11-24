@@ -10,15 +10,125 @@
 <body class="page">
 
   <header class="header">
-
+    <nav class="header__navigation">
+      <ul class="header__list">
+        <li class="header__item">
+          <a href="#" class="header__link">Покрытия и градиенты</a>
+        </li>
+        <li class="header__item">
+          <a href="#" class="header__link">Велосипеды</a>
+        </li>
+        <li class="header__item">
+          <a href="#" class="header__link">Тренировки</a>
+        </li>
+      </ul>
+    </nav>
   </header>
 
   <main class="content">
-
+    <!-- main screen -->
+    <section class="main-screen">
+      <div class="main-screen__text-container">
+        <h1 class="main-screen__title">Шоссе, ТТ и Грэвел</h1>
+        <p class="main-screen__text">Триатлонные старты, горные серпантины или грейвел заезды по живописным маршрутам – нужно только определиться с выбором велосипеда и отправиться в путь.</p>
+        <div class="main-screen__link-container">
+          <div class="main-screen__hidden-container"></div>
+          <a href="#" class="main-screen__link">Подробнее</a>
+        </div>
+        <p class="main-screen__bike-name">Cannondale Systemsix</p>
+      </div>
+      <div class="main-screen__bike-transform">
+        <div class="main-screen__bike-container">
+          <img src="./images/main-screen-bike.png" alt="велосипед" class="main-screen__bike-image">
+        </div>
+      </div>
+    </section>
+    <!-- eddie mercs -->
+    <section class="eddie-mercs">
+      <img src="./images/eddie-mercs.png" alt="велогонщик" class="eddie-mercs__image">
+      <div class="eddie-mercs__text-container">
+        <h2 class="eddie-mercs__title">«Катайся много или мало, долго или коротко, как хочешь - но катайся»</h2>
+        <p class="eddie-mercs__text">Эдди Меркс</p>
+        <p class="eddie-mercs__text">Велогонщик</p>
+      </div>
+    </section>
+    <!-- highway -->
+    <section class="highway">
+      <h2 class="highway__title">Шоссе</h2>
+      <p class="highway__text">На шоссейном велосипеде можно ездить по асфальту на разных градиентах: будь то горы или равнины. Гонки проходят в командном пелотоне, но тренироваться можно и самостоятельно.</p>
+      <div class="highway__picture-container">
+        <img src="./images/highway.png" alt="шоссе" class="highway__picture">
+        <img src="./images/gravel.png" alt="грэвел" class="highway__picture">
+        <img src="./images/TT.png" alt="TT" class="highway__picture">
+      </div>
+      <div class="highway__button-container">
+        <button class="highway__button highway__button_move_left" type="button"></button>
+        <button class="highway__button highway__button_move_right" type="button"></button>
+      </div>
+    </section>
+    <!-- bicycles -->
+    <section class="bicycles">
+      <div class="bicycles__text-container">
+        <h2 class="bicycles__title">Велосипеды</h2>
+        <button class="bicycles__button bicycles__button_status_active" type="button">Шоссе</button>
+        <button class="bicycles__button" type="button">Грэвел</button>
+        <button class="bicycles__button" type="button">ТТ</button>
+      </div>
+      <div class="bicycles__content">
+        <article class="bicycles__container">
+          <a href="#" class="bicycles__link">
+            <img src="./images/Cervelo-Caledonia-5.png" alt="Cervelo-Caledonia-5" class="bicycles__picture">
+          </a>
+        </article>
+        <article class="bicycles__container">
+          <a href="#" class="bicycles__link">
+            <img src="./images/Cannondale-Systemsix-Himod.png" alt="Cannondale-Systemsix-Himod" class="bicycles__picture">
+          </a>
+        </article>
+        <article class="bicycles__container">
+          <a href="#" class="bicycles__link">
+            <img src="./images/Trek-Domane-SL-7.png" alt="Trek Domane SL-7" class="bicycles__picture">
+          </a>
+        </article>
+        <p class="bicycles__name">Cervelo Caledonia-5</p>
+        <p class="bicycles__name">Cannondale Systemsix Himod</p>
+        <p class="bicycles__name">Trek Domane SL-7</p>
+      </div>
+    </section>
+    <!-- training -->
+    <section class="training">
+      <div class="training__text-container">
+        <h2 class="training__title">Тренировки</h2>
+        <p class="training__text">Чтобы найти маршрут для тренировки можно воспользоваться сервисом Komoot, а записать эти тренировки поможет приложение Strava, а также это приложение позволит построить тренировочный план.</p>
+        <ul class="training__link-list">
+          <li class="training__link-item">
+            <a href="#" class="training__link">Strava</a>
+          </li>
+          <li class="training__link-item">
+            <a href="#" class="training__link">Komoot</a>
+          </li>
+        </ul>
+      </div>
+      <img src="./images/training.png" alt="тренировка" class="training__picture">
+    </section>
   </main>
-
+  <!-- footer -->
   <footer class="footer">
-
+    <form class="footer__form">
+      <fieldset class="footer__email-cotainer">
+        <h2 class="footer__title">Подпишитесь на рассылку —</h2>
+        <input type="email" class="footer__email" name="email" id="email" placeholder="Ваш e-mail">
+        <p class="footer__text">© Road Club 2021</p>
+      </fieldset>
+      <fieldset class="footer__change-theme-container">
+        <img src="./images/sun.svg" alt="солнце" class="footer__change-theme-img">
+        <label for="checkbox" class="footer__label">
+          <input type="checkbox" class="footer__checkbox" id="checkbox"/>
+          <span class="footer__pseudo-item"></span>
+        </label>
+        <img src="./images/moon.svg" alt="луна" class="footer__change-theme-img">
+      </fieldset>
+    </form>
   </footer>
 
   <script src="./scripts/index.js"></script>
