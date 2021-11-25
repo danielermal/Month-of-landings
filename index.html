@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" class="document">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,18 +8,18 @@
 </head>
 
 <body class="page">
-
+  <!-- header -->
   <header class="header">
     <nav class="header__navigation">
       <ul class="header__list">
         <li class="header__item">
-          <a href="#" class="header__link">Покрытия и градиенты</a>
+          <a href="#highway" class="header__link">Покрытия и градиенты</a>
         </li>
         <li class="header__item">
-          <a href="#" class="header__link">Велосипеды</a>
+          <a href="#bicycles" class="header__link">Велосипеды</a>
         </li>
         <li class="header__item">
-          <a href="#" class="header__link">Тренировки</a>
+          <a href="#training" class="header__link">Тренировки</a>
         </li>
       </ul>
     </nav>
@@ -33,7 +33,7 @@
         <p class="main-screen__text">Триатлонные старты, горные серпантины или грейвел заезды по живописным маршрутам – нужно только определиться с выбором велосипеда и отправиться в путь.</p>
         <div class="main-screen__link-container">
           <div class="main-screen__hidden-container"></div>
-          <a href="#" class="main-screen__link">Подробнее</a>
+          <a href="#bicycles" class="main-screen__link">Подробнее</a>
         </div>
         <p class="main-screen__bike-name">Cannondale Systemsix</p>
       </div>
@@ -53,13 +53,14 @@
       </div>
     </section>
     <!-- highway -->
-    <section class="highway">
+    <section class="highway" id="highway">
       <h2 class="highway__title">Шоссе</h2>
       <p class="highway__text">На шоссейном велосипеде можно ездить по асфальту на разных градиентах: будь то горы или равнины. Гонки проходят в командном пелотоне, но тренироваться можно и самостоятельно.</p>
       <div class="highway__picture-container">
         <img src="./images/highway.png" alt="шоссе" class="highway__picture">
         <img src="./images/gravel.png" alt="грэвел" class="highway__picture">
         <img src="./images/TT.png" alt="TT" class="highway__picture">
+        <img src="./images/annotation-highway.svg" alt="дорога" class="highway__picture-annotation">
       </div>
       <div class="highway__button-container">
         <button class="highway__button highway__button_move_left" type="button"></button>
@@ -67,26 +68,26 @@
       </div>
     </section>
     <!-- bicycles -->
-    <section class="bicycles">
+    <section class="bicycles" id="bicycles">
       <div class="bicycles__text-container">
         <h2 class="bicycles__title">Велосипеды</h2>
-        <button class="bicycles__button bicycles__button_status_active" type="button">Шоссе</button>
-        <button class="bicycles__button" type="button">Грэвел</button>
-        <button class="bicycles__button" type="button">ТТ</button>
+        <button class="bicycles__button bicycles__button_highway bicycles__button_status_active" type="button">Шоссе</button>
+        <button class="bicycles__button bicycles__button_gravel" type="button">Грэвел</button>
+        <button class="bicycles__button bicycles__button_tt" type="button">ТТ</button>
       </div>
       <div class="bicycles__content">
         <article class="bicycles__container">
-          <a href="#" class="bicycles__link">
+          <a href="https://www.sigmasports.com/item/Cervelo/Caledonia-5-Ultegra-Disc-Road-Bike-2021/RDEN" class="bicycles__link" target="_blank">
             <img src="./images/Cervelo-Caledonia-5.png" alt="Cervelo-Caledonia-5" class="bicycles__picture">
           </a>
         </article>
         <article class="bicycles__container">
-          <a href="#" class="bicycles__link">
+          <a href="https://www.sigmasports.com/item/Cannondale/SystemSix-HiMOD-Ultegra-Di2-Disc-Road-Bike-2021/R82J" class="bicycles__link" target="_blank">
             <img src="./images/Cannondale-Systemsix-Himod.png" alt="Cannondale-Systemsix-Himod" class="bicycles__picture">
           </a>
         </article>
         <article class="bicycles__container">
-          <a href="#" class="bicycles__link">
+          <a href="https://www.sigmasports.com/item/Trek/Domane-SL-7-Force-eTap-AXS-Disc-Road-Bike-2021/RULF" class="bicycles__link" target="_blank">
             <img src="./images/Trek-Domane-SL-7.png" alt="Trek Domane SL-7" class="bicycles__picture">
           </a>
         </article>
@@ -96,16 +97,16 @@
       </div>
     </section>
     <!-- training -->
-    <section class="training">
+    <section class="training" id="training">
       <div class="training__text-container">
         <h2 class="training__title">Тренировки</h2>
         <p class="training__text">Чтобы найти маршрут для тренировки можно воспользоваться сервисом Komoot, а записать эти тренировки поможет приложение Strava, а также это приложение позволит построить тренировочный план.</p>
         <ul class="training__link-list">
           <li class="training__link-item">
-            <a href="#" class="training__link">Strava</a>
+            <a href="https://www.strava.com" class="training__link" target="_blank">Strava</a>
           </li>
           <li class="training__link-item">
-            <a href="#" class="training__link">Komoot</a>
+            <a href="https://www.komoot.com" class="training__link" target="_blank">Komoot</a>
           </li>
         </ul>
       </div>
@@ -115,9 +116,12 @@
   <!-- footer -->
   <footer class="footer">
     <form class="footer__form">
-      <fieldset class="footer__email-cotainer">
+      <fieldset class="footer__form-container">
         <h2 class="footer__title">Подпишитесь на рассылку —</h2>
-        <input type="email" class="footer__email" name="email" id="email" placeholder="Ваш e-mail">
+        <div class="footer__email-container">
+          <input type="email" class="footer__email" name="email" id="email" placeholder="Ваш e-mail" required>
+          <button class="footer__email-submit" type="submit">ok</button>
+        </div>
         <p class="footer__text">© Road Club 2021</p>
       </fieldset>
       <fieldset class="footer__change-theme-container">
