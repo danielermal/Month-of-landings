@@ -1,6 +1,26 @@
 .highway__picture {
   width: 650px;
-  height: 400px;
+  max-height: 400px;
+  height: 100%;
   object-fit: cover;
   margin: 0 40px 0 0;
+}
+
+@media screen and (max-width: 1210.98px) {
+  .highway__picture {
+    width: 500px;
+    margin-right: 30px;
+  }
+}
+
+@media screen and (max-width: 1040.98px) {
+  .highway__picture {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 780.98px) {
+  .highway__picture {
+    max-width: 284px;
+  }
 }

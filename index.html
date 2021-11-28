@@ -23,6 +23,7 @@
         </li>
       </ul>
     </nav>
+    <button class="header__menu-button" type="button"></button>
   </header>
 
   <main class="content">
@@ -30,6 +31,11 @@
     <section class="main-screen">
       <div class="main-screen__text-container">
         <h1 class="main-screen__title">Шоссе, ТТ и Грэвел</h1>
+        <div class="main-screen__bike-transform main-screen__bike-transform_screen_mobile">
+          <div class="main-screen__bike-container">
+            <img src="./images/main-screen-bike.png" alt="велосипед" class="main-screen__bike-image">
+          </div>
+        </div>
         <p class="main-screen__text">Триатлонные старты, горные серпантины или грейвел заезды по живописным маршрутам – нужно только определиться с выбором велосипеда и отправиться в путь.</p>
         <div class="main-screen__link-container">
           <div class="main-screen__hidden-container"></div>
@@ -54,7 +60,11 @@
     </section>
     <!-- highway -->
     <section class="highway" id="highway">
-      <h2 class="highway__title">Шоссе</h2>
+      <div class="highway__button-container highway__button-container_screen_mobile">
+        <h2 class="highway__title">Шоссе</h2>
+        <button class="highway__button highway__button_screen_mobile highway__button_move_left" type="button"></button>
+        <button class="highway__button highway__button_screen_mobile highway__button_move_right" type="button"></button>
+      </div>
       <p class="highway__text">На шоссейном велосипеде можно ездить по асфальту на разных градиентах: будь то горы или равнины. Гонки проходят в командном пелотоне, но тренироваться можно и самостоятельно.</p>
       <div class="highway__picture-container">
         <img src="./images/highway.png" alt="шоссе" class="highway__picture">
@@ -74,6 +84,11 @@
         <button class="bicycles__button bicycles__button_highway bicycles__button_status_active" type="button">Шоссе</button>
         <button class="bicycles__button bicycles__button_gravel" type="button">Грэвел</button>
         <button class="bicycles__button bicycles__button_tt" type="button">ТТ</button>
+        <select name="bicycle" id="bicycle" class="bicycles__change-select">
+          <option value="Шоссе" class="bicycles__change-select-value">Шоссе</option>
+          <option value="Грэвел" class="bicycles__change-select-value">Грэвел</option>
+          <option value="ТТ" class="bicycles__change-select-value">ТТ</option>
+        </select>
       </div>
       <div class="bicycles__content">
         <article class="bicycles__container">
@@ -95,11 +110,17 @@
         <p class="bicycles__name">Cannondale Systemsix Himod</p>
         <p class="bicycles__name">Trek Domane SL-7</p>
       </div>
+      <div class="bicycles__scrollbar-buttons">
+        <button class="bicycles__scrollbar-button bicycles__scrollbar-button_status_active" type="button"></button>
+        <button class="bicycles__scrollbar-button" type="button"></button>
+        <button class="bicycles__scrollbar-button" type="button"></button>
+      </div>
     </section>
     <!-- training -->
     <section class="training" id="training">
       <div class="training__text-container">
         <h2 class="training__title">Тренировки</h2>
+        <img src="./images/training.png" alt="тренировка" class="training__picture training__picture_screen_mobile">
         <p class="training__text">Чтобы найти маршрут для тренировки можно воспользоваться сервисом Komoot, а записать эти тренировки поможет приложение Strava, а также это приложение позволит построить тренировочный план.</p>
         <ul class="training__link-list">
           <li class="training__link-item">
@@ -134,6 +155,32 @@
       </fieldset>
     </form>
   </footer>
+  <!-- popup -->
+  <div class="popup">
+    <div class="popup__container">
+      <nav class="popup__navigation">
+        <ul class="popup__list">
+          <li class="popup__item">
+            <a href="#highway" class="popup__link">Покрытия и градиенты</a>
+          </li>
+          <li class="popup__item">
+            <a href="#bicycles" class="popup__link">Велосипеды</a>
+          </li>
+          <li class="popup__item">
+            <a href="#training" class="popup__link">Тренировки</a>
+          </li>
+        </ul>
+      </nav>
+      <form class="popup__change-theme-container">
+        <img src="./images/sun.svg" alt="солнце" class="popup__change-theme-img">
+        <label for="checkbox-popup" class="popup__label">
+          <input type="checkbox" class="popup__checkbox" id="checkbox-popup"/>
+          <span class="popup__pseudo-item"></span>
+        </label>
+        <img src="./images/moon.svg" alt="луна" class="popup__change-theme-img">
+      </form>
+    </div>
+  </div>
 
   <script src="./scripts/index.js"></script>
 </body>

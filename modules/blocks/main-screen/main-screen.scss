@@ -4,9 +4,24 @@
   display: flex;
   justify-content: space-between;
   box-sizing: border-box;
-  background-image: url(../images/main-screen-forest.png);
-  background-position: bottom right;
-  background-repeat: no-repeat;
-  background-size: 610px 836px;
   max-width: 1440px;
+}
+
+@media screen and (max-width: 1210.98px) {
+  .main-screen {
+    padding-left: 40px;
+  }
+}
+
+@media screen and (max-width: 1040.98px) {
+  .main-screen {
+    padding-left: 30px;
+  }
+}
+
+@media screen and (max-width: 780.98px) {
+  .main-screen {
+    flex-direction: column;
+    padding: 40px 18px;
+  }
 }

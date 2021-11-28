@@ -1,0 +1,13 @@
+.main-screen__bike-transform_screen_mobile {
+  display: none;
+  margin: 40px auto 0;
+  padding: 151px 0 37px;
+  box-sizing: border-box;
+  background-size: 254px 348px;
+}
+
+@media screen and (max-width: 780.98px) {
+  .main-screen__bike-transform_screen_mobile {
+    display: flex;
+  }
+}

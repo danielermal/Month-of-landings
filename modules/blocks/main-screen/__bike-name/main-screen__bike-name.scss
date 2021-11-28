@@ -9,3 +9,21 @@
   background-position: right center;
   background-repeat: no-repeat;
 }
+
+@media screen and (max-width: 1210.98px) {
+  .main-screen__bike-name {
+    margin: 90px auto 150px 0;
+  }
+}
+
+@media screen and (max-width: 1040.98px) {
+  .main-screen__bike-name {
+    margin: 80px auto 130px 0;
+  }
+}
+
+@media screen and (max-width: 780.98px) {
+  .main-screen__bike-name {
+    display: none;
+  }
+}

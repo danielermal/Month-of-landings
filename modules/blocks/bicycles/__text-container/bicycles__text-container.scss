@@ -5,3 +5,10 @@
   margin: $center;
   align-items: flex-end;
 }
+
+@media screen and (max-width: 780.98px) {
+  .bicycles__text-container {
+    flex-direction: column;
+    justify-content: start;
+  }
+}

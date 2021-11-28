@@ -2,8 +2,47 @@
   margin: 120px auto 0;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: repeat(2, minmax(min-content, max-content));
   width: 100%;
-  max-height: 424px;
   gap: 22px 30px;
 }
+
+@media screen and (max-width: 1040.98px) {
+  .bicycles__content {
+    margin: 60px auto 0;
+    gap: 18px 25px;
+  }
+}
+
+@media screen and (max-width: 780.98px) {
+  .bicycles__content {
+    margin: 20px auto 0;
+    max-width: 284px;
+    grid-template-columns: repeat(3, 284px);
+    padding: 15px 15px 16px;
+    border-radius: 20px;
+    background-color: #F4F4F4;
+    filter: drop-shadow(0px 20px 140px rgba(0, 0, 0, 0.06));
+    gap: 3px 15px;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+  }
+}
+
+.bicycles__content::-webkit-scrollbar-track {
+  background-color:rgba(0, 0, 0, 0)
+  }
+
+  .bicycles__content::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+  background-color:#6dc0c8;
+  }
+
+  .bicycles__content::-webkit-scrollbar-thumb:hover{
+  background-color:#56999f;
+  }
+
+  .bicycles__content::-webkit-scrollbar{
+  height: 4px;
+  }

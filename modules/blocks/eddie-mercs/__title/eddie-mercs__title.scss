@@ -5,3 +5,18 @@
   line-height: 44px;
   width: 100%;
 }
+
+@media screen and (max-width: 1040.98px) {
+  .eddie-mercs__title {
+    font-size: 28px;
+    line-height: 36px;
+  }
+}
+
+@media screen and (max-width: 780.98px) {
+  .eddie-mercs__title {
+    font-weight: 600;
+    font-size: 23px;
+    line-height: 29px;
+  }
+}

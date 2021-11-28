@@ -5,3 +5,9 @@
   padding: 20px;
   box-sizing: border-box;
 }
+
+@media screen and (max-width: 780.98px) {
+  .bicycles__link {
+    padding: 0;
+  }
+}

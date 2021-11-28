@@ -5,3 +5,11 @@
   font-size: 18px;
   line-height: 28px;
 }
+
+@media screen and (max-width: 780.98px) {
+  .training__text {
+    margin: 40px auto 0;
+    font-size: 12px;
+    line-height: 18px;
+  }
+}

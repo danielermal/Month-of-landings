@@ -5,3 +5,9 @@
   display: flex;
   align-items: center;
 }
+
+@media screen and (max-width: 780.98px) {
+  .header__list {
+    display: none;
+  }
+}

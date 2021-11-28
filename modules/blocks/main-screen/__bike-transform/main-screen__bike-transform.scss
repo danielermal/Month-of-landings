@@ -1,7 +1,30 @@
 .main-screen__bike-transform {
-  margin: 347px auto 79px 50px;
-  max-width: 440px;
-  height: 430px;
+  max-width: 810px;
   width: 100%;
-  background-color: rgba($color: #000000, $alpha: 0);
+  padding: 20px 0 79px 0;
+  background-image: url(../images/main-screen-forest.png);
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-size: 610px 836px;
 }
+
+@media screen and (max-width: 1210.98px) {
+  .main-screen__bike-transform {
+    background-size: 500px 720px;
+    padding-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 1040.98px) {
+  .main-screen__bike-transform {
+    background-size: 400px 600px;
+    padding-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 780.98px) {
+  .main-screen__bike-transform {
+    display: none;
+  }
+}
+
