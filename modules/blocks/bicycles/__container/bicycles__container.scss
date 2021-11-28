@@ -7,3 +7,10 @@
   align-items: center;
   justify-content: center;
 }
+
+@media screen and (max-width: 780.98px) {
+  .bicycles__container {
+    box-shadow: none;
+    scroll-snap-align: center;
+  }
+}

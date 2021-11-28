@@ -6,4 +6,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0;
+}
+
+@media screen and (max-width: 780.98px) {
+  .footer__change-theme-container {
+    display: none;
+  }
 }

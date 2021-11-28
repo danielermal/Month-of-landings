@@ -4,3 +4,11 @@
   line-height: 22px;
   margin: 0;
 }
+
+@media screen and (max-width: 780.98px) {
+  .bicycles__name {
+    margin: $center;
+    font-size: 14px;
+    line-height: 18px;
+  }
+}

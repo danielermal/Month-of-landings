@@ -1,3 +1,9 @@
 .highway__button_move_left {
   background-image: url(../images/button-left.svg);
 }
+
+@media screen and (max-width: 780.98px) {
+  .highway__button_move_left {
+    margin: 0 10px 0 auto;
+  }
+}

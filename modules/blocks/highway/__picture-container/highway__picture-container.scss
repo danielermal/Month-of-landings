@@ -5,3 +5,10 @@
   width: 100%;
   position: relative;
 }
+
+@media screen and (max-width: 780.98px) {
+  .highway__picture-container {
+    order: 1;
+    margin: 40px auto 0;
+  }
+}

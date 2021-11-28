@@ -13,3 +13,9 @@
   border-radius: 4px;
   text-align: center;
 }
+
+@media screen and (max-width: 780.98px) {
+  .main-screen__link {
+    width: 284px;
+  }
+}

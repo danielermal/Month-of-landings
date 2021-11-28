@@ -1,7 +1,7 @@
 const highwayTitle = document.querySelector('.highway__title')
 const highwayText = document.querySelector('.highway__text')
-const rightButton = document.querySelector('.highway__button_move_right')
-const leftButton = document.querySelector('.highway__button_move_left')
+const rightButton = document.querySelectorAll('.highway__button_move_right')
+const leftButton = document.querySelectorAll('.highway__button_move_left')
 const highwayPictureContainer = document.querySelector('.highway__picture-container')
 const annotation = highwayPictureContainer.querySelector('.highway__picture-annotation')
 const highway = ['Шоссе', 'На шоссейном велосипеде можно ездить по асфальту на разных градиентах: будь то горы или равнины. Гонки проходят в командном пелотоне, но тренироваться можно и самостоятельно.']
@@ -26,20 +26,23 @@ function highwayTextContent () {
     annotation.src = './images/annotation-tt.svg'
   }
 }
-
-rightButton.addEventListener('click', function () {
-  const highwayPicture = highwayPictureContainer.querySelector('.highway__picture')
-  highwayPicture.remove()
-  highwayPictureContainer.append(highwayPicture)
-  highwayTextContent()
+rightButton.forEach(function (item) {
+  item.addEventListener('click', function () {
+    const highwayPicture = highwayPictureContainer.querySelector('.highway__picture')
+    highwayPicture.remove()
+    highwayPictureContainer.append(highwayPicture)
+    highwayTextContent()
+  })
 })
 
-leftButton.addEventListener('click', function () {
-  const highwayPicture = highwayPictureContainer.querySelectorAll('.highway__picture')
-  const highwayPictureLast = highwayPicture[(highwayPicture.length - 1)]
-  highwayPictureLast.remove()
-  highwayPictureContainer.prepend(highwayPictureLast)
-  highwayTextContent()
+leftButton.forEach(function (item) {
+  item.addEventListener('click', function () {
+    const highwayPicture = highwayPictureContainer.querySelectorAll('.highway__picture')
+    const highwayPictureLast = highwayPicture[(highwayPicture.length - 1)]
+    highwayPictureLast.remove()
+    highwayPictureContainer.prepend(highwayPictureLast)
+    highwayTextContent()
+  })
 })
 
 // bicycles
@@ -58,6 +61,31 @@ const ttPictures = ['./images/Specialized-S-Works-Shiv.png', './images/BMC-Timem
 const highwayNames = ['Cervelo Caledonia-5', 'Cannondale Systemsix Himod', 'Trek Domane SL-7']
 const gravelNames = ['Cervelo Aspero GRX 810', 'Specialized S-Works Diverge', 'Cannondale Topstone Lefty 3']
 const ttNames = ['Specialized S-Works Shiv', 'BMC Timemachine 01 ONE', 'Cervelo P-Series']
+const bicyclesList = document.querySelector('.bicycles__change-select')
+
+  bicyclesList.addEventListener('click', function () {
+    if (bicyclesList.value === 'Шоссе') {
+      for (let i = 0; i < 3; i++) {
+        bicyclesLinks[i].href = highwayLinks[i]
+        bicyclesPictures[i].src = highwayPictures[i]
+        bicyclesText[i].textContent = highwayNames[i]
+      }
+    }
+    if (bicyclesList.value === 'Грэвел') {
+      for (let i = 0; i < 3; i++) {
+        bicyclesLinks[i].href = gravelLinks[i]
+        bicyclesPictures[i].src = gravelPictures[i]
+        bicyclesText[i].textContent = gravelNames[i]
+      }
+    }
+    if (bicyclesList.value === 'ТТ') {
+      for (let i = 0; i < 3; i++) {
+        bicyclesLinks[i].href = ttLinks[i]
+        bicyclesPictures[i].src = ttPictures[i]
+        bicyclesText[i].textContent = ttNames[i]
+      }
+    }
+  })
 
 function changeButton (button) {
   const buttons = document.querySelectorAll('.bicycles__button')
@@ -94,6 +122,8 @@ ttButton.addEventListener('click', function () {
   }
 })
 
+
+
 // footer
 const emailInput = document.querySelector('.footer__email')
 const emailSubmitButton = document.querySelector('.footer__email-submit')
@@ -107,6 +137,7 @@ emailInput.addEventListener('click', function () {
 
 // theme dark
 const changeThemeButton = document.querySelector('.footer__pseudo-item')
+const changeThemePopupButton = document.querySelector('.popup__pseudo-item')
 const page = document.querySelector('.page')
 const header = document.querySelector('.header')
 const headerLink = document.querySelectorAll('.header__link')
@@ -123,7 +154,7 @@ const emailContainer = document.querySelector('.footer__email-container')
 const email = document.querySelector('.footer__email')
 const emailSubmit = document.querySelector('.footer__email-submit')
 
-changeThemeButton.addEventListener('click', function () {
+function changeTheme () {
   page.classList.toggle('page_theme_dark')
   header.classList.toggle('header_theme_dark')
   headerLink.forEach( function (item) {
@@ -147,4 +178,53 @@ changeThemeButton.addEventListener('click', function () {
   emailContainer.classList.toggle('footer__email-container_theme_dark')
   email.classList.toggle('email_theme_dark')
   emailSubmit.classList.toggle('footer__email-submit_theme_dark')
+}
+
+changeThemeButton.addEventListener('click', () => changeTheme())
+
+changeThemePopupButton.addEventListener('click', () => changeTheme())
+
+// при прокрутке велосипеда меняем цвет кнопок
+const scroller = document.querySelector('.bicycles__content')
+const itemWidth = scroller.querySelector('.bicycles__container').clientWidth
+const scrollbarButton = document.querySelectorAll('.bicycles__scrollbar-button')
+
+scroller.addEventListener('scroll', function () {
+  console.log(parseInt(scroller.scrollLeft))
+  if (parseInt(scroller.scrollLeft) === 0) {
+    scrollbarButton.forEach(function (item) {
+      item.classList.remove('bicycles__scrollbar-button_status_active')
+    })
+    scrollbarButton[0].classList.add('bicycles__scrollbar-button_status_active')
+  }
+  if (parseInt(scroller.scrollLeft) === 299) {
+    scrollbarButton.forEach(function (item) {
+      item.classList.remove('bicycles__scrollbar-button_status_active')
+    })
+    scrollbarButton[1].classList.add('bicycles__scrollbar-button_status_active')
+  }
+  if (parseInt(scroller.scrollLeft) >= 597) {
+    scrollbarButton.forEach(function (item) {
+      item.classList.remove('bicycles__scrollbar-button_status_active')
+    })
+    scrollbarButton[2].classList.add('bicycles__scrollbar-button_status_active')
+  }
+})
+
+
+//popup
+const popup = document.querySelector('.popup')
+const popupButton = document.querySelector('.header__menu-button')
+const popupLink = popup.querySelectorAll('.popup__link')
+
+popupButton.addEventListener('click', function () {
+  popup.classList.toggle('popup_opened')
+  popupButton.classList.toggle('header__menu-button_popup')
+})
+
+popupLink.forEach(function (item) {
+  item.addEventListener('click', function () {
+    popup.classList.remove('popup_opened')
+    popupButton.classList.remove('header__menu-button_popup')
+  })
 })

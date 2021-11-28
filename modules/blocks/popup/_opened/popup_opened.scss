@@ -1,0 +1,12 @@
+.popup_opened {
+  display: none;
+  opacity: 1;
+}
+
+@media screen and (max-width: 780.98px) {
+  .popup_opened {
+    display: flex;
+    height: 100%;
+    transition: height 0s 0s linear, opacity .4s 0s linear;
+  }
+}

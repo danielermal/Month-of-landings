@@ -5,4 +5,28 @@
   justify-content: space-between;
   box-sizing: border-box;
   max-width: 1440px;
+  width: 100%;
+}
+
+@media screen and (max-width: 1210.98px) {
+  .training {
+    padding: 100px 40px 80px;
+  }
+}
+
+@media screen and (max-width: 1040.98px) {
+  .training {
+    padding: 80px 30px 60px;
+  }
+}
+
+@media screen and (max-width: 780.98px) {
+  .training {
+    padding: 80px 18px 60px;
+    background-image: url(../images/line.svg);
+    background-position: center top 40px;
+    background-size: auto;
+    background-repeat: no-repeat;
+    flex-direction: column;
+  }
 }

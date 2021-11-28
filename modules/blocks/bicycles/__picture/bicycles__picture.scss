@@ -6,3 +6,9 @@
   object-fit: cover;
   border-radius: 20px;
 }
+
+@media screen and (max-width: 780.98px) {
+  .bicycles__picture {
+    max-width: 254px;
+  }
+}

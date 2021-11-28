@@ -9,3 +9,9 @@
   align-items: center;
   border-radius: 4px;
 }
+
+@media screen and (max-width: 780.98px) {
+  .footer__email-container {
+    margin: 40px auto 0;
+  }
+}
