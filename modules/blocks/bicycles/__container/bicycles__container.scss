@@ -1,7 +1,7 @@
 .bicycles__container {
   margin: $center;
   background: #F4F4F4;
-  box-shadow: -20px 60px 220px rgba(0, 0, 0, 0.44);
+  filter: drop-shadow(0px 20px 140px rgba(0, 0, 0, 0.06));
   border-radius: 20px;
   display: flex;
   align-items: center;
@@ -10,7 +10,7 @@
 
 @media screen and (max-width: 780.98px) {
   .bicycles__container {
-    box-shadow: none;
+    filter: none;
     scroll-snap-align: center;
   }
 }

@@ -1,25 +1,6 @@
 .footer {
-  padding: 80px 120px 60px;
   margin: $center;
-  box-sizing: border-box;
   display: flex;
   background-color: #EFEFEF;
 }
 
-@media screen and (max-width: 1210.98px) {
-  .footer {
-    padding: 60px 40px 40px;
-  }
-}
-
-@media screen and (max-width: 1040.98px) {
-  .footer {
-    padding: 40px 30px 30px;
-  }
-}
-
-@media screen and (max-width: 780.98px) {
-  .footer {
-    padding: 60px 18px 16px;
-  }
-}

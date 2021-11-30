@@ -26,6 +26,7 @@
     gap: 3px 15px;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
+    box-sizing: border-box;
   }
 }
 
@@ -44,5 +45,5 @@
   }
 
   .bicycles__content::-webkit-scrollbar{
-  height: 4px;
+  height: 0px;
   }
