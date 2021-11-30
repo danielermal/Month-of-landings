@@ -2,5 +2,26 @@
   margin: $center;
   display: flex;
   justify-content: space-between;
+  max-width: 1440px;
   width: 100%;
+  padding: 80px 120px 60px;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 1210.98px) {
+  .footer__form {
+    padding: 60px 40px 40px;
+  }
+}
+
+@media screen and (max-width: 1040.98px) {
+  .footer__form {
+    padding: 40px 30px 30px;
+  }
+}
+
+@media screen and (max-width: 780.98px) {
+  .footer__form {
+    padding: 60px 18px 16px;
+  }
 }

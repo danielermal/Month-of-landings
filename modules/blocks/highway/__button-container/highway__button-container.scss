@@ -5,3 +5,9 @@
   max-width: 120px;
   width: 100%;
 }
+
+@media screen and (max-width: 780.98px) {
+  .highway__button-container {
+    display: none;
+  }
+}

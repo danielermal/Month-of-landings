@@ -90,9 +90,9 @@ const bicyclesList = document.querySelector('.bicycles__change-select')
 function changeButton (button) {
   const buttons = document.querySelectorAll('.bicycles__button')
   buttons.forEach(function (item) {
-    item.classList.remove('bicycles__button_status_active')
+    item.classList.remove('bicycles__button_active')
   })
-  button.classList.add('bicycles__button_status_active')
+  button.classList.add('bicycles__button_active')
 }
 
 highwayButton.addEventListener('click', function () {
@@ -153,6 +153,11 @@ const footer = document.querySelector('.footer')
 const emailContainer = document.querySelector('.footer__email-container')
 const email = document.querySelector('.footer__email')
 const emailSubmit = document.querySelector('.footer__email-submit')
+const closePopupButton = document.querySelector('.header__menu-button_popup')
+const bicyclesChangeSelect = document.querySelector('.bicycles__change-select')
+const bicyclesNames = document.querySelectorAll('.bicycles__name')
+const popupContainer = document.querySelector('.popup__container')
+const popupText = document.querySelectorAll('.popup__link')
 
 function changeTheme () {
   page.classList.toggle('page_theme_dark')
@@ -176,13 +181,23 @@ function changeTheme () {
   })
   footer.classList.toggle('footer_theme_dark')
   emailContainer.classList.toggle('footer__email-container_theme_dark')
-  email.classList.toggle('email_theme_dark')
+  email.classList.toggle('footer__email_theme_dark')
   emailSubmit.classList.toggle('footer__email-submit_theme_dark')
+  bicyclesChangeSelect.classList.toggle('bicycles__change-select_theme_dark')
+  popupContainer.classList.toggle('popup__container_theme_dark')
+  popupText.forEach(function (item) {
+    item.classList.toggle('popup__link_theme_dark')
+  })
 }
 
 changeThemeButton.addEventListener('click', () => changeTheme())
 
-changeThemePopupButton.addEventListener('click', () => changeTheme())
+changeThemePopupButton.addEventListener('click', function () {
+  changeTheme()
+  bicyclesNames.forEach(function (item) {
+    item.classList.toggle('bicycles__name_theme_dark')
+  })
+})
 
 // при прокрутке велосипеда меняем цвет кнопок
 const scroller = document.querySelector('.bicycles__content')
@@ -191,19 +206,19 @@ const scrollbarButton = document.querySelectorAll('.bicycles__scrollbar-button')
 
 scroller.addEventListener('scroll', function () {
   console.log(parseInt(scroller.scrollLeft))
-  if (parseInt(scroller.scrollLeft) === 0) {
+  if (parseInt(scroller.scrollLeft) >= 0 && parseInt(scroller.scrollLeft) <= 300) {
     scrollbarButton.forEach(function (item) {
       item.classList.remove('bicycles__scrollbar-button_status_active')
     })
     scrollbarButton[0].classList.add('bicycles__scrollbar-button_status_active')
   }
-  if (parseInt(scroller.scrollLeft) === 299) {
+  if (parseInt(scroller.scrollLeft) > 299 && parseInt(scroller.scrollLeft) <= 500) {
     scrollbarButton.forEach(function (item) {
       item.classList.remove('bicycles__scrollbar-button_status_active')
     })
     scrollbarButton[1].classList.add('bicycles__scrollbar-button_status_active')
   }
-  if (parseInt(scroller.scrollLeft) >= 597) {
+  if (parseInt(scroller.scrollLeft) >= 550) {
     scrollbarButton.forEach(function (item) {
       item.classList.remove('bicycles__scrollbar-button_status_active')
     })
