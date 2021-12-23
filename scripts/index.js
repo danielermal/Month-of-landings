@@ -127,10 +127,12 @@ ttButton.addEventListener('click', function () {
 // footer
 const emailInput = document.querySelector('.footer__email')
 const emailSubmitButton = document.querySelector('.footer__email-submit')
+const footerForm = document.querySelector('.footer__form')
 
 emailInput.addEventListener('click', function () {
   emailSubmitButton.classList.add('footer__email-submit_active')
-  emailSubmitButton.addEventListener('click', function () {
+  footerForm.addEventListener('submit', function (evt) {
+    evt.preventDefault()
     emailInput.value = "Круто!"
   })
 })
@@ -225,7 +227,6 @@ scroller.addEventListener('scroll', function () {
     scrollbarButton[2].classList.add('bicycles__scrollbar-button_status_active')
   }
 })
-
 
 //popup
 const popup = document.querySelector('.popup')
