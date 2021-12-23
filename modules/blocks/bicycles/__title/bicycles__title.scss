@@ -1,0 +1,14 @@
+.bicycles__title {
+  font-weight: bold;
+  font-size: 55px;
+  line-height: 60px;
+  margin: 0;
+}
+
+@media screen and (max-width: 1040.98px) {
+  .bicycles__title {
+    font-size: 42px;
+    line-height: 50px;
+    margin: 0 auto 0 0;
+  }
+}

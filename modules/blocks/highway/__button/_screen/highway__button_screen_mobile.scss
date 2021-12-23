@@ -1,0 +1,12 @@
+.highway__button_screen_mobile {
+  display: none;
+  width: 24px;
+  height: 24px;
+}
+
+@media screen and (max-width: 780.98px) {
+  .highway__button_screen_mobile {
+    display: flex;
+    background-size: 4.5px 10px;
+  }
+}

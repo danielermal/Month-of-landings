@@ -1,0 +1,34 @@
+.header {
+  padding: 28px 120px;
+  margin: $center;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
+  position:-webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #F4F4F4;
+  z-index: 3;
+  max-width: 1440px;
+}
+
+@media screen and (max-width: 1210.98px) {
+  .header {
+    padding: 24px 40px;
+  }
+}
+
+@media screen and (max-width: 1040.98px) {
+  .header {
+    padding: 20px 30px;
+  }
+}
+
+@media screen and (max-width: 780.98px) {
+  .header {
+    padding: 28px 18px 30px 18px;
+  }
+}

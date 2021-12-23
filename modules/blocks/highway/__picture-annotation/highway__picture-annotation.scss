@@ -1,0 +1,19 @@
+.highway__picture-annotation {
+  width: 100px;
+  height: 40px;
+  position: absolute;
+  left: 0;
+  bottom: 16px;
+  background-image: url(../images/highway-annotacion.png);
+  background-repeat: no-repeat;
+  object-fit: none;
+  background-size: cover;
+}
+
+@media screen and (max-width: 780.98px) {
+  .highway__picture-annotation {
+    width: 70px;
+    height: 28px;
+    bottom: 14px;
+  }
+}

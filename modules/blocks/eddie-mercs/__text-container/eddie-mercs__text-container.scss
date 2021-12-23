@@ -1,0 +1,12 @@
+.eddie-mercs__text-container {
+  max-width: 470px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 780.98px) {
+  .eddie-mercs__text-container {
+    margin: 40px auto 0;
+  }
+}

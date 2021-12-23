@@ -1,0 +1,15 @@
+.main-screen__text {
+  margin: 50px auto 0;
+  font-size: 18px;
+  line-height: 28px;
+  color: $textColor;
+  opacity: 0.7;
+}
+
+@media screen and (max-width: 780.98px) {
+  .main-screen__text {
+    margin-top: 40px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+}

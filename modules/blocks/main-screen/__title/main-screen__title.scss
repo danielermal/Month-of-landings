@@ -1,0 +1,20 @@
+.main-screen__title {
+  margin: $center;
+  font-weight: bold;
+  font-size: 55px;
+  line-height: 60px;
+}
+
+@media screen and (max-width: 1040.98px) {
+  .main-screen__title {
+    font-size: 42px;
+    line-height: 46px;
+  }
+}
+
+@media screen and (max-width: 780.98px) {
+  .main-screen__title {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}

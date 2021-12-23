@@ -1,0 +1,17 @@
+.footer__form-container {
+  margin: 0;
+  max-width: 360px;
+  width: 100%;
+  border: none;
+  padding: 0;
+}
+
+@media screen and (max-width: 780.98px) {
+  .footer__form-container {
+    background-image: url(../images/sun-mobile.png);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: auto;
+    margin: $center;
+  }
+}

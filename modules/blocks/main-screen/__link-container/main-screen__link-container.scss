@@ -1,0 +1,22 @@
+.main-screen__link-container {
+  margin: 50px auto 0 0;
+  display: flex;
+  width: 180px;
+  height: 50px;
+  background-color: #24B47E;
+  border-radius: 4px;
+  position: relative;
+}
+
+.main-screen__link-container:hover .main-screen__hidden-container {
+  width: 100%;
+}
+
+@media screen and (max-width: 780.98px) {
+  .main-screen__link-container {
+    margin-top: 40px;
+    max-width: 284px;
+    width: 100%;
+    height: 46;
+  }
+}

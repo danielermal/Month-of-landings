@@ -1,0 +1,19 @@
+.training__link-list {
+  display: flex;
+  list-style: none;
+  margin: 182px auto 0 0;
+  justify-content: space-between;
+  padding: 0;
+}
+
+@media screen and (max-width: 1040.98px) {
+  .training__link-list {
+    margin: 50px auto 0 0;
+  }
+}
+
+@media screen and (max-width: 780.98px) {
+  .training__link-list {
+    margin: 40px auto 0 0;
+  }
+}

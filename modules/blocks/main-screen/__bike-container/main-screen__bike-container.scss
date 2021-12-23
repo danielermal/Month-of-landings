@@ -1,0 +1,26 @@
+.main-screen__bike-container {
+  padding: 20px 50px;
+  box-sizing: border-box;
+  background-color: #F4F4F4;
+  box-shadow: -20px 60px 220px rgba(0, 0, 0, 0.44);
+  border-radius: 20px;
+  position: sticky;
+  top: 347px;
+  position:-webkit-sticky;
+  display: flex;
+  max-width: 440px;
+}
+
+@media screen and (max-width: 1040.98px) {
+  .main-screen__bike-container {
+    max-width: 360px;
+    padding: 20px 30px;
+    top: 200px
+  }
+}
+
+@media screen and (max-width: 780.98px) {
+  .main-screen__bike-container {
+    padding: 10px 25px;
+  }
+}

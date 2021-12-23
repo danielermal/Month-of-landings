@@ -1,0 +1,21 @@
+.bicycles__change-select {
+  margin: 40px auto 0 0;
+  border: 1px solid #E3E3E3;
+  box-sizing: border-box;
+  border-radius: 2px;
+  width: 114px;
+  height: 30px;
+  padding: 8px 12px;
+  background-color: rgba($color: #000000, $alpha: 0);
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 14px;
+  color: $titleColor;
+  display: none;
+}
+
+@media screen and (max-width: 780.98px) {
+  .bicycles__change-select {
+    display: flex;
+  }
+}

@@ -1,0 +1,12 @@
+.bicycles__button_active {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  opacity: 1;
+  color: $titleColor;
+  transition: opacity 0.4s linear;
+
+  &:hover {
+    opacity: 0.75;
+  }
+}

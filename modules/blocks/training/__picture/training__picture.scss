@@ -1,0 +1,27 @@
+.training__picture {
+  margin: 0 auto;
+  max-width: 580px;
+  max-height: 460px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: right center;
+}
+
+@media screen and (max-width: 1210.98px) {
+  .training__picture {
+    max-width: 500px;
+  }
+}
+
+@media screen and (max-width: 1040.98px) {
+  .training__picture {
+    max-width: 400px;
+  }
+}
+
+@media screen and (max-width: 780.98px) {
+  .training__picture {
+    display: none;
+  }
+}

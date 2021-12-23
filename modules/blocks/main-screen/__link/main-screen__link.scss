@@ -1,0 +1,21 @@
+.main-screen__link {
+  width: 180px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 16px 10px;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  color: #FFF;
+  border-radius: 4px;
+  text-align: center;
+}
+
+@media screen and (max-width: 780.98px) {
+  .main-screen__link {
+    width: 284px;
+  }
+}

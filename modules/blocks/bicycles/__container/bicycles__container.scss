@@ -1,0 +1,16 @@
+.bicycles__container {
+  margin: $center;
+  background: #F4F4F4;
+  filter: drop-shadow(0px 20px 140px rgba(0, 0, 0, 0.06));
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 780.98px) {
+  .bicycles__container {
+    filter: none;
+    scroll-snap-align: center;
+  }
+}

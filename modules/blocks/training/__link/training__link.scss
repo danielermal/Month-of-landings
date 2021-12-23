@@ -1,0 +1,20 @@
+.training__link {
+  text-decoration: none;
+  margin: 0;
+  color: $titleColor;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  transition: opacity 0.4s linear;
+
+  &:hover {
+    opacity: 0.75;
+  }
+}
+
+@media screen and (max-width: 780.98px) {
+  .training__link {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}

@@ -1,0 +1,17 @@
+.footer__email-container {
+  margin: 50px auto 0;
+  border: 1px solid rgba(199, 199, 199, 0.5);
+  box-sizing: border-box;
+  width: 100%;
+  padding: 11px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 4px;
+}
+
+@media screen and (max-width: 780.98px) {
+  .footer__email-container {
+    margin: 40px auto 0;
+  }
+}

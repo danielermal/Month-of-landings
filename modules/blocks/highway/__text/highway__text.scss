@@ -1,0 +1,27 @@
+.highway__text {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+  color: $textColor;
+  opacity: 0.7;
+  margin: 50px 0 80px;
+  max-width: 460px;
+  width: 100%;
+}
+
+@media screen and (max-width: 1040.98px) {
+  .highway__text {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 30px 0 50px;
+  }
+}
+
+@media screen and (max-width: 780.98px) {
+  .highway__text {
+    order: 2;
+    margin: 40px auto 0;
+    font-size: 12px;
+    line-height: 18px;
+  }
+}

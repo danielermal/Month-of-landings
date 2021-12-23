@@ -1,0 +1,13 @@
+.bicycles__scrollbar-buttons {
+  margin: 20px auto 0;
+  max-width: 22px;
+  width: 100%;
+  display: none;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 780.98px) {
+  .bicycles__scrollbar-buttons {
+    display: flex;
+  }
+}

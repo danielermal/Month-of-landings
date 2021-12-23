@@ -1,0 +1,23 @@
+.highway__button {
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  background-color: #EBEBEB;
+  cursor: pointer;
+  margin: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  transition: opacity 0.5s linear;
+
+  &:hover {
+    opacity: 0.6;
+  }
+}
+
+@media screen and (max-width: 780.98px) {
+  .highway__button {
+    display: none;
+  }
+}
