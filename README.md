@@ -16,6 +16,6 @@ ___
 * SCSS
 
 ___
-## 4. ## Ссылка на проект
+## 3. ## Ссылка на проект
 * [Ссылка на проект в GitPages](https://danielermal.github.io/Month-of-landings/)
 * [Ссылка на макет в Figma](https://www.figma.com/file/G3UWFlQmNtNs67751YiDH2/Month-of-Landings?node-id=0%3A1)
